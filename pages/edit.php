@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id']))
+{
+    header('Location: action.php?page=login');
+}
+?>
 <?php include 'header.php' ?>
 
 <section class="py-5" style="background-color: lightgray">

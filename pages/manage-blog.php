@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id']))
+{
+    header('Location: action.php?page=login');
+}
+?>
 <?php include 'header.php' ?>
 
 <section class="py-5 manage-bg" >
@@ -5,7 +11,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card" style="background-color: lightcyan">
-                    <div class="card-header">Add Blog Info</div>
+                    <div class="card-header text-center bg-primary text-white fw-bold">Add Blog Info</div>
                     <div class="card-body">
                         <h4 class="text-center text-success"><?php echo $result ?></h4>
 

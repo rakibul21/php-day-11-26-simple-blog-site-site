@@ -52,6 +52,13 @@ if (isset($_GET['page']))
     {
         include 'pages/dashboard.php';
     }
+    elseif ($_GET['page'] == 'detail')
+    {
+        $id = $_GET['id'];
+        $blog = new Blog();
+        $singleBlog = $blog->getBlogById($id);
+        include "pages/detail.php";
+    }
 
 }
 
