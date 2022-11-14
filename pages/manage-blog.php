@@ -16,7 +16,7 @@ if (!isset($_SESSION['id']))
                         <h4 class="text-center text-success"><?php echo $result ?></h4>
 
 
-                        <table class="table table-bordered table-hover " style="border: 2px solid lime;">
+                        <table class="table table-bordered table-hover " style="border: 2px solid red;">
                             <thead>
                             <tr>
                                 <th>Blog Title</th>
